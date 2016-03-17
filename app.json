@@ -23,5 +23,13 @@
     }
   },
   "image": "heroku/nodejs",
-  "addons": ["mongolab"]
+  "addons": ["mongolab"],
+  "oauth": {
+  "twitter": {
+    "consumer_key": "", // REQUIRED
+    "consumer_secret": "" // REQUIRED
+  },
+   "facebook": {
+    "appIds": ""
+  }
 }
