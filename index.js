@@ -3,11 +3,7 @@
 
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
-<<<<<<< HEAD
-=======
 var path = require('path');
->>>>>>> 54f92f6a433bf0cec4905a2128ab9059213b3f87
-
 var databaseUri = process.env.DATABASE_URI || process.env.MONGOLAB_URI;
 
 if (!databaseUri) {
@@ -17,7 +13,6 @@ if (!databaseUri) {
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-<<<<<<< HEAD
   appId: process.env.APP_ID || 'vearlo_app_id',
   masterKey: process.env.MASTER_KEY || 'vearlo_master_key', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://localhost:1337',  // Don't forget to change to https if needed
