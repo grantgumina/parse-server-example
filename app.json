@@ -25,11 +25,12 @@
   "image": "heroku/nodejs",
   "addons": ["mongolab"],
   "oauth": {
-  "twitter": {
-    "consumer_key": "9YsE3FfM8A0yuB9eO7YuOlRto", // REQUIRED
-    "consumer_secret": "U02B8fLfL8s6Jw3eva1kPNRVNAOIj5slcXprPrHXp3TWoJdBiG" // REQUIRED
-  },
-   "facebook": {
-    "appIds": "974690795902155"
+    "twitter": {
+      "consumer_key": "9YsE3FfM8A0yuB9eO7YuOlRto", // REQUIRED
+      "consumer_secret": "U02B8fLfL8s6Jw3eva1kPNRVNAOIj5slcXprPrHXp3TWoJdBiG" // REQUIRED
+    },
+     "facebook": {
+      "appIds": "974690795902155"
+    }
   }
 }
