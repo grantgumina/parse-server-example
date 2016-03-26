@@ -3,7 +3,7 @@
 
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
-var simpleMailGunAdapter = require('parse-server-simple-mailgun-adapter');
+var SimpleMailgunAdapter = require('parse-server-simple-mailgun-adapter');
 var path = require('path');
 var databaseUri = process.env.DATABASE_URI || process.env.MONGOLAB_URI;
 
