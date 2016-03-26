@@ -24,8 +24,8 @@ var api = new ParseServer({
   },
   emailAdapter: SimpleMailgunAdapter({
     apiKey: 'key-919b79aa948ef44c538d844e60db49f6',
-    domain: 'vearlo.herokuapp.com',
-    fromAddress: 'support@vearlo.herokuapp.com',
+    domain: 'sandboxbcd130a1f27d4c078696d35da978e53f.mailgun.org',
+    fromAddress: 'support@sandboxbcd130a1f27d4c078696d35da978e53f.mailgun.org',
   }),
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
