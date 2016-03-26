@@ -12,18 +12,20 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
+  appName: 'Vearlo',
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'vearlo_app_id',
   masterKey: process.env.MASTER_KEY || 'vearlo_master_key', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://localhost:1337',  // Don't forget to change to https if needed
+  publicServerURL: 'http://vearlo.herokuapp.com',
   liveQuery: {
     classNames: ["Quips"] // List of classes to support for query subscriptions
   },
   emailAdapter: SimpleMailgunAdapter({
     apiKey: 'key-919b79aa948ef44c538d844e60db49f6',
-    domain: 'sandboxbcd130a1f27d4c078696d35da978e53f.mailgun.org',
-    fromAddress: 'support@sandboxbcd130a1f27d4c078696d35da978e53f.mailgun.org',
+    domain: 'vearlo.herokuapp.com',
+    fromAddress: 'support@vearlo.herokuapp.com',
   }),
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
