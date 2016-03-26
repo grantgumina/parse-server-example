@@ -18,7 +18,7 @@ var api = new ParseServer({
   appId: process.env.APP_ID || 'vearlo_app_id',
   masterKey: process.env.MASTER_KEY || 'vearlo_master_key', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://localhost:1337',  // Don't forget to change to https if needed
-  publicServerURL: 'http://vearlo.herokuapp.com',
+  publicServerURL: 'http://vearlo.herokuapp.com/parse',
   liveQuery: {
     classNames: ["Quips"] // List of classes to support for query subscriptions
   },
