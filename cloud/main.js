@@ -6,8 +6,9 @@ Parse.Cloud.define('hello', function (req, res) {
 Parse.Cloud.define('getNumberOfScheduledMessagesThisYear', function (req, res) {
 	var smQuery = new Parse.Query("ScheduledMessage");
 
-	var subDate = req.user.get("subscriptionDate");
-	if (subDate != null) {
+	
+	if (req.user.get("subscriptionDate") != null) {
+		var subDate = req.user.get("subscriptionDate");
 		var maxDate = subDate;
 		maxDate.setYear(subDate.getMonth() + 12);
 		smQuery.greaterThanOrEqualTo("createdAt", subDate);
